@@ -1,0 +1,13 @@
+.sidebar {
+  position: fixed;
+  left: -280px;
+  top: 0;
+  width: 280px;
+  height: 100vh;
+  background: white;
+  transition: 0.3s ease;
+}
+
+.sidebar.active {
+  left: 0;
+}

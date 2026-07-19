@@ -1,0 +1,359 @@
+/* Navbar CSS */
+.navbar {
+  height: 80px;
+  width: 100%;
+  background: #fff;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+
+   position: sticky; 
+   top: 0;
+   z-index: 100; 
+}
+
+/* Logo Area */
+.logo-section {
+  display: flex;
+  align-items: center;
+  /* gap: 12px; */
+}
+
+.logo-section img {
+  width: 80px;
+  height: 90px;
+  /* object-fit: contain; */
+}
+
+
+
+.nav-links{
+    display: flex;
+    gap:35px;
+    list-style: none;
+    
+}  
+
+.nav-links li a {
+  text-decoration: none;
+  color: #222;
+  padding-bottom: 8px;
+  position: relative;
+transition: 0.10s ease;
+}
+
+/* Active Link */
+.nav-links li a.active {
+  color: #2e7d32;
+ 
+}
+
+.nav-links li a.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: 3px;
+
+  background: #2e7d32;
+  border-radius: 10px;
+  
+}
+.nav-buttons{
+    display:flex;
+    gap:20px;
+    list-style:none;
+}
+
+/* Language Dropdown */
+/* .language-select {
+  padding: 10px 15px;
+
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  margin:10px;
+  outline: none;
+  cursor: pointer;
+  background: white;
+  font-size: 15px;
+} */
+
+
+.nav-link, .drop-down li{
+    list-style: none;
+    height:100%;
+    padding: 0.5ren 1rem;
+    font-weight:400;
+    cursor:pointer;
+    margin:10px;
+    width:70px;
+}
+
+a{
+    text-decoration:none;
+    /* color:currentColor; */
+}
+.drop-down{
+    position:absolute;
+    padding:10px;
+    margin:0.5rem, -0.5rem;
+    color:black;
+    background-color:#33be3a;
+    margin-right:30px;
+    border-radius:5px;
+    font-size:12px;
+    display:none;
+    width:100px;
+}
+.nav-link:hover{
+    background-color:black;
+    border-radius:0.5rem;
+}
+
+.register a{
+    display:flex;
+}
+.nav-link{
+    margin-right:50px;   
+    border:1px solid; 
+    border-color:#33be3a;
+    border-radius:5px;
+    background-color:  #33be3a;
+    font-size:17px;
+    padding:8px;
+    /* padding-left:20px; */
+    height:40px;
+    width:100px
+}
+ .nav-link:hover{
+    border:2px solid;
+    border-color:#2e7d32;
+    background-color: #fff;
+    transition: 0.3s ease;
+} 
+
+.register:hover .drop-down{
+    display: block;
+} 
+.register a{                                                 
+    text-decoration: none;
+    color:black;
+}
+
+.dropdown-icon{
+    margin-top:4px;
+    font-size:13px;
+    position:relative;
+    right:-5px;
+    transform:rotate(0deg);
+    transition:0.3s ease-in-out all;
+}
+.drop-btn{
+  border:0px;
+  background-color:#fff;
+}
+
+.register:hover .dropdown-icon{
+    transform:rotate(180deg);
+}
+
+.drop-down li:hover{
+    background:#fff;
+    color:black;
+    border-radius:3px;
+    padding:3px;
+    /* margin:10px; */
+}
+
+.LoginBtn{
+  border:0px;
+  background-color: #33be3a;
+  text-align:center;
+  height:40px;
+  width:100px;
+  border-radius: 5px;
+  margin:10px;
+}
+
+
+/* HeroSection CSS */
+                                
+.HeroContainer{
+    max-width: 100%;
+    margin: 0 auto;
+    height: 80vh;
+    background-image: url('./assets/HeroImg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.heroHead{
+  padding:20px;
+  padding-bottom:0px;
+  color:hsl(123, 46%, 34%);
+  font-size:80px;
+}
+
+.goalPara{
+  padding-left:20px;
+  color:black;
+  width:400px;
+  font-size:20px;
+}
+
+.iconPara{
+  font-size:smaller;
+  display:flex;
+  gap:5px;
+}
+.icon{
+  color:green;
+  margin-left:20px;
+  font-size:larger;
+  padding-top:3px;
+}
+
+/* HOW IT WORKS */
+.head{
+  text-align: center;
+  margin-top:20px;
+}
+
+.CardContainer{
+  display:flex;
+  gap:30px;
+  justify-content: center;
+}
+.card{
+  margin:20px;
+  padding:10px;
+  height:230px;
+  width:230px;
+  color:black;
+  background-color: rgb(236, 236, 236);
+  border-radius:10px;
+  text-align:center;
+  align-items: center;
+}
+.card p{
+  font-size:large;
+}
+.number{
+  color:#2e7d32;
+  height:40px;
+}
+.card-icon{
+  margin-top:10px;
+  color:#2e7d32;
+  height:150px;
+  width:60px;
+}
+
+.arrow{
+  margin-top:110px;
+  font-size:30px;
+  color:#2e7d32;
+}
+
+
+/* Footer */                      
+.footer{                         
+  margin-top:30px;
+  gap:25px;
+  font-family:"sans-serif";
+}
+
+.logo{
+  height:90px;
+  width:80px;
+}
+.footerSection1 p{
+  width:200px;
+  margin-left:20px;
+}
+.items-align{
+  margin-left:20px;
+  display:flex;
+}
+.items-align h1{
+  margin-top:15px;
+  font-size:20px;
+}
+.items-align p{
+  font-size:10px;
+}
+
+.footerSection2 h1{
+  margin-top:20px;
+  font-size:15px;
+  font-weight:bold;
+  margin-left:28px;
+}
+
+.footerSection2 li{
+  list-style: none;
+}
+
+.footerSection2 a{
+  text-decoration: none;
+  color:black;
+}
+
+.footerSection3 h1{
+  margin-top:20px;
+  font-size:15px;
+  font-weight:bold;
+  margin-left:28px;
+}
+
+.footerSection3 li{
+  list-style: none;
+}
+
+.footerSection3 a{
+  text-decoration: none;
+  color:black;
+}
+
+.footerSection4 h1{
+  font-size:15px;
+  margin-top:20px;
+  font-weight:bold;
+  margin-left:28px;
+}
+
+.contact{
+  display:flex;
+  gap:10px;
+}
+
+.contact p{
+  margin-bottom:10px;
+}                                                               
+
+
+@media (max-width : 769px){
+  html{
+    font-size:10px;
+  }
+  /* .nav-link{
+    display:none;
+  }
+  .drop-down{
+    display:block;
+  } */
+  .HeroContainer{
+    height:50vh;
+  }                                                         
+  .heroHead{
+    font-size: 40px;
+  }
+  .goalPara{
+    font-size:8px;
+  }
+}

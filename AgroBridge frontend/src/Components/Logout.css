@@ -1,0 +1,142 @@
+.logoutPage{
+    width:90vw;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#f4f8f4;
+}
+
+.logoutCard{
+    width:500px;
+    background:white;
+    border-radius:18px;
+    padding:45px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.logoutIcon{
+    width:90px;
+    height:90px;
+    margin:auto;
+    background:#eaf8ef;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.logoutIcon i{
+    font-size:42px;
+    color:#1d7a35;
+}
+
+.logoutCard h2{
+    font-size:32px;
+    color:#1d7a35;
+    margin-bottom:15px;
+}
+
+.logoutText{
+    font-size:28px;
+    font-weight:600;
+    color:#222;
+    margin-bottom:15px;
+}
+
+.logoutSubText{
+    color:#666;
+    font-size:18px;
+    line-height:30px;
+    margin-bottom:35px;
+}
+
+.logoutButtons{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+}
+
+.cancelBtn{
+    width:170px;
+    height:50px;
+    border:2px solid #1d7a35;
+    background:white;
+    color:#1d7a35;
+    border-radius:8px;
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.cancelBtn:hover{
+    background:#1d7a35;
+    color:white;
+}
+
+.logoutBtn{
+    width:170px;
+    height:50px;
+    border:none;
+    background:#1d7a35;
+    color:white;
+    border-radius:8px;
+    margin-top:65px;
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
+    margin-bottom:25px;
+}
+
+.logoutBtn:hover{
+    background:#145826;
+}
+
+.securityBox{
+    margin-top:40px;
+    background:#f7f9f7;
+    padding:20px;
+    border-radius:10px;
+    display:flex;
+    gap:15px;
+    align-items:flex-start;
+    text-align:left;
+}
+
+.securityBox i{
+    color:#1d7a35;
+    font-size:26px;
+}
+
+.securityBox span{
+    color:#555;
+    font-size:16px;
+    line-height:25px;
+}
+
+@media(max-width:768px){
+
+.logoutCard{
+    width:90%;
+    padding:30px;
+}
+
+.logoutButtons{
+    flex-direction:column;
+    align-items:center;
+}
+
+.cancelBtn,
+.logoutBtn{
+    width:100%;
+}
+
+.logoutText{
+    margin-bottom:20px;
+    font-size:22px;
+}
+
+}

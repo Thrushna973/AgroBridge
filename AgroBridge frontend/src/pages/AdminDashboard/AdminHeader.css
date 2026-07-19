@@ -1,0 +1,60 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:rgb(19, 107, 46);
+  color:white;
+  width:100%;
+  padding:20px;
+}
+
+.header-right {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.header-right img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.header-right input[type="date"] {
+  padding: 10px 14px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  background: #fff;
+  font-size: 14px;
+  color: #374151;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.header-right input[type="date"]:hover {
+  border-color: #16a34a;
+}
+
+.header-right input[type="date"]:focus {
+  border-color: #16a34a;
+  box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.15);
+}
+
+.admin-layout{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-body{
+    flex: 1;
+    display: flex;
+}
+
+.admin-content{
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: #f5f6fa;
+}

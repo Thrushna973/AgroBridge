@@ -1,0 +1,1088 @@
+/* ===========================
+   ATTENDANCE PAGE
+=========================== */
+
+.attendancePage{
+
+    padding:30px;
+
+    background:#f5f7fb;
+
+    min-height:100vh;
+
+}
+
+.attendanceTitle{
+
+    font-size:30px;
+
+    font-weight:700;
+
+    color:#1f2937;
+
+    margin-bottom:30px;
+
+}
+
+
+
+/* ===========================
+   SUMMARY CARDS
+=========================== */
+
+/* .summaryCards{
+
+    display:flex;
+
+    grid-template-columns:repeat(auto-fit(220px,2fr, 2fr));
+
+    gap:20px;
+
+    margin-bottom:25px;
+
+} */
+
+.summaryCards{
+    display:flex;
+    margin:10px;
+    justify-content:space-between;
+    width:80vw;
+}
+
+.summaryCard{
+
+    background:white;
+
+    border-radius:16px;
+
+    padding:22px;
+
+    display:flex;
+    width:15vw;
+
+    align-items:center;
+
+    gap:20px;
+
+    box-shadow:0 6px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.summaryCard:hover{
+
+    transform:translateY(-5px);
+
+}
+
+.summaryCard svg{
+
+    font-size:35px;
+
+    color:#2e7d32;
+
+}
+
+.summaryCard h3{
+
+    margin:0;
+
+    font-size:28px;
+
+    font-weight:700;
+
+}
+
+.summaryCard p{
+
+    margin-top:6px;
+
+    color:#666;
+
+    font-size:14px;
+
+}
+
+
+
+/* Present */
+
+.summaryCard.present{
+
+    border-left:6px solid #2e7d32;
+
+}
+
+.summaryCard.present svg{
+
+    color:#2e7d32;
+
+}
+
+
+
+/* Absent */
+
+.summaryCard.absent{
+
+    border-left:6px solid #e53935;
+
+}
+
+.summaryCard.absent svg{
+
+    color:#e53935;
+
+}
+
+
+
+/* Half Day */
+
+.summaryCard.halfday{
+
+    border-left:6px solid #f9a825;
+
+}
+
+.summaryCard.halfday svg{
+
+    color:#f9a825;
+
+}
+
+
+
+/* ===========================
+   STATISTICS CARDS
+=========================== */
+
+.attendanceStatistics{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:20px;
+
+    margin-bottom:30px;
+
+}
+
+.statisticsCard{
+
+    background:white;
+
+    border-radius:16px;
+
+    padding:25px;
+
+    text-align:center;
+
+    box-shadow:0 5px 18px rgba(0,0,0,.08);
+
+}
+
+.statisticsCard h4{
+
+    margin-bottom:10px;
+
+    color:#666;
+
+    font-size:16px;
+
+    font-weight:600;
+
+}
+
+.statisticsCard h2{
+
+    color:#2e7d32;
+
+    font-size:34px;
+
+    font-weight:bold;
+
+}
+
+
+
+/* ===========================
+   FILTERS
+=========================== */
+
+.attendanceFilters{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    flex-wrap:wrap;
+
+    background:white;
+
+    padding:20px;
+
+    border-radius:15px;
+
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+
+    margin-bottom:30px;
+
+}
+
+.attendanceFilters select{
+
+    padding:12px 16px;
+
+    border-radius:10px;
+
+    border:1px solid #ddd;
+
+    outline:none;
+
+    font-size:15px;
+
+    min-width:240px;
+
+    cursor:pointer;
+
+}
+
+.attendanceFilters input[type="date"]{
+
+    padding:11px 16px;
+
+    border-radius:10px;
+
+    border:1px solid #ddd;
+
+    outline:none;
+
+    font-size:15px;
+
+}
+
+
+
+/* ===========================
+   SEARCH BOX
+=========================== */
+
+.searchBox{
+
+    flex:1;
+
+    min-width:250px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    background:#f3f4f6;
+
+    padding:12px 16px;
+
+    border-radius:12px;
+
+}
+
+.searchBox svg{
+
+    color:#666;
+
+    font-size:18px;
+
+}
+
+.searchBox input{
+
+    flex:1;
+
+    border:none;
+
+    background:transparent;
+
+    outline:none;
+    height:25px;
+
+    font-size:15px;
+
+}
+
+
+
+/* ===========================
+   ATTENDANCE TABLE
+=========================== */
+
+.attendanceTable{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    box-shadow:0 6px 20px rgba(0,0,0,.08);
+
+    overflow-x:auto;
+
+    margin-bottom:25px;
+
+}
+
+.tableHeader{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:20px;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+}
+
+.tableHeader h3{
+
+    font-size:24px;
+
+    color:#1f2937;
+
+    margin:0;
+
+}
+
+.tableButtons{
+
+    display:flex;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+}
+
+.attendanceTable table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+.attendanceTable thead{
+
+    background:#2e7d32;
+
+    color:white;
+
+}
+
+.attendanceTable th{
+
+    padding:15px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    text-align:left;
+
+}
+
+.attendanceTable td{
+
+    padding:15px;
+
+    border-bottom:1px solid #eee;
+
+    font-size:15px;
+
+}
+
+.attendanceTable tbody tr{
+
+    transition:.25s;
+
+}
+
+.attendanceTable tbody tr:hover{
+
+    background:#f7faf7;
+
+}
+
+.attendanceTable select{
+
+    width:130px;
+
+    padding:8px;
+
+    border-radius:8px;
+
+    border:1px solid #ccc;
+
+    outline:none;
+
+}
+
+.attendanceTable input[type="time"]{
+
+    padding:8px;
+
+    border-radius:8px;
+
+    border:1px solid #ccc;
+
+    outline:none;
+
+}
+
+.attendanceTable input[type="text"]{
+
+    width:170px;
+
+    padding:8px;
+
+    border-radius:8px;
+
+    border:1px solid #ccc;
+
+    outline:none;
+
+}
+
+
+
+/* ===========================
+   ACTION BUTTONS
+=========================== */
+
+.presentBtn{
+
+    background:#2e7d32;
+
+    color:white;
+
+    border:none;
+
+    padding:11px 20px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-size:14px;
+
+    transition:.3s;
+
+}
+
+.presentBtn:hover{
+
+    background:#256728;
+
+}
+
+.absentBtn{
+
+    background:#d32f2f;
+
+    color:white;
+
+    border:none;
+
+    padding:11px 20px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-size:14px;
+
+    transition:.3s;
+
+}
+
+.absentBtn:hover{
+
+    background:#b71c1c;
+
+}
+
+.attendanceActions{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    margin-bottom:30px;
+
+}
+
+.saveAttendanceBtn{
+
+    background:#1565c0;
+
+    color:white;
+
+    border:none;
+
+    padding:14px 35px;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.saveAttendanceBtn:hover{
+
+    background:#0d47a1;
+
+}
+
+/* ===========================
+   HISTORY CARD
+=========================== */
+
+.historyCard{
+
+    background:white;
+
+    margin-top:30px;
+
+    padding:25px;
+
+    border-radius:18px;
+
+    box-shadow:0 6px 20px rgba(0,0,0,.08);
+
+    overflow-x:auto;
+
+}
+
+.historyHeader{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:20px;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+}
+
+.historyHeader h3{
+
+    margin:0;
+
+    font-size:24px;
+
+    color:#1f2937;
+
+}
+
+.historyCard table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+.historyCard thead{
+
+    background:#1565c0;
+
+    color:white;
+
+}
+
+.historyCard th{
+
+    padding:15px;
+
+    text-align:left;
+
+    font-size:15px;
+
+    font-weight:600;
+
+}
+
+.historyCard td{
+
+    padding:15px;
+
+    border-bottom:1px solid #eee;
+
+    font-size:15px;
+
+}
+
+.historyCard tbody tr{
+
+    transition:.3s;
+
+}
+
+.historyCard tbody tr:hover{
+
+    background:#f5f9ff;
+
+}
+
+
+
+/* ===========================
+   EXPORT BUTTONS
+=========================== */
+
+.exportButtons{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    gap:15px;
+
+    margin-bottom:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.exportBtn{
+
+    background:#4caf50;
+
+    color:white;
+
+    border:none;
+
+    padding:12px 24px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.exportBtn:hover{
+
+    background:#2e7d32;
+
+}
+
+
+
+/* ===========================
+   STATUS BADGES
+=========================== */
+
+.statusBadge{
+
+    display:inline-block;
+
+    padding:6px 14px;
+
+    border-radius:20px;
+
+    color:white;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+.statusBadge.present{
+
+    background:#2e7d32;
+
+}
+
+.statusBadge.absent{
+
+    background:#d32f2f;
+
+}
+
+.statusBadge.halfday{
+
+    background:#f9a825;
+
+}
+
+
+
+/* ===========================
+   INPUT FOCUS
+=========================== */
+
+input:focus,
+
+select:focus,
+
+textarea:focus{
+
+    border-color:#2e7d32;
+
+    box-shadow:0 0 5px rgba(46,125,50,.3);
+
+}
+
+
+
+/* ===========================
+   SCROLLBAR
+=========================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+    height:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#ececec;
+
+    border-radius:10px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#b0b0b0;
+
+    border-radius:10px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#888;
+
+}
+
+
+
+/* ===========================
+   TABLE RESPONSIVE
+=========================== */
+
+.attendanceTable,
+
+.historyCard{
+
+    overflow-x:auto;
+
+}
+
+.attendanceTable table,
+
+.historyCard table{
+
+    min-width:900px;
+
+}
+
+
+
+/* ===========================
+   CARD ANIMATION
+=========================== */
+
+.summaryCard,
+
+.statisticsCard,
+
+.attendanceTable,
+
+.historyCard{
+
+    animation:fadeUp .4s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(15px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+/* ===========================
+   HOVER EFFECTS
+=========================== */
+
+.summaryCard:hover,
+
+.statisticsCard:hover,
+
+.historyCard:hover,
+
+.attendanceTable:hover{
+
+    box-shadow:0 12px 30px rgba(0,0,0,.12);
+
+}
+
+
+
+/* ===========================
+   MOBILE (991px)
+=========================== */
+
+@media(max-width:991px){
+
+    .attendancePage{
+
+        padding:20px;
+
+    }
+
+    .attendanceTitle{
+
+        font-size:26px;
+
+    }
+
+    .attendanceFilters{
+
+        flex-direction:column;
+
+        align-items:stretch;
+
+    }
+
+    .attendanceFilters select,
+
+    .attendanceFilters input[type="date"]{
+
+        width:100%;
+
+    }
+
+    .searchBox{
+
+        width:100%;
+
+    }
+
+    .tableHeader{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+    }
+
+    .tableButtons{
+
+        width:100%;
+
+    }
+
+    .presentBtn,
+
+    .absentBtn{
+
+        flex:1;
+
+    }
+
+    .attendanceActions{
+
+        justify-content:center;
+
+    }
+
+    .saveAttendanceBtn{
+
+        width:100%;
+
+    }
+
+}
+
+
+
+/* ===========================
+   MOBILE (768px)
+=========================== */
+
+@media(max-width:768px){
+
+    .summaryCards{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .attendanceStatistics{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .summaryCard{
+
+        padding:18px;
+
+    }
+
+    .statisticsCard{
+
+        padding:20px;
+
+    }
+
+    .historyHeader{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+    }
+
+    .exportButtons{
+
+        width:100%;
+
+        justify-content:flex-start;
+
+    }
+
+    .exportBtn{
+
+        width:100%;
+
+    }
+
+}
+
+
+
+/* ===========================
+   SMALL DEVICES
+=========================== */
+
+@media(max-width:576px){
+
+    .attendanceTitle{
+
+        font-size:22px;
+
+    }
+
+    .summaryCard h3{
+
+        font-size:24px;
+
+    }
+
+    .statisticsCard h2{
+
+        font-size:28px;
+
+    }
+
+    .attendanceTable th,
+
+    .attendanceTable td,
+
+    .historyCard th,
+
+    .historyCard td{
+
+        font-size:13px;
+
+        padding:10px;
+
+    }
+
+    .attendanceTable input[type="text"]{
+
+        width:120px;
+
+    }
+
+}
+
+
+
+/* ===========================
+   UTILITIES
+=========================== */
+
+.textCenter{
+
+    text-align:center;
+
+}
+
+.mt20{
+
+    margin-top:20px;
+
+}
+
+.mb20{
+
+    margin-bottom:20px;
+
+}
+
+.hidden{
+
+    display:none;
+
+}

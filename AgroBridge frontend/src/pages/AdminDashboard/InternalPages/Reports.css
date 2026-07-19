@@ -1,0 +1,258 @@
+.reportsPage{
+    padding:25px;
+    background:#f4f6f9;
+    min-height:100vh;
+}
+
+/* Page Heading */
+
+.pageTitle{
+    color:#1f6d2c;
+    font-size:30px;
+    font-weight:700;
+    margin-bottom:25px;
+}
+
+/* Search & Filter */
+
+.topBar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+    gap:20px;
+}
+
+.topBar input{
+    flex:1;
+    padding:12px 15px;
+    border:1px solid #dcdcdc;
+    border-radius:8px;
+    outline:none;
+    font-size:15px;
+}
+
+.topBar input:focus{
+    border-color:#2e7d32;
+}
+
+.topBar select{
+    width:180px;
+    padding:12px;
+    border-radius:8px;
+    border:1px solid #dcdcdc;
+    cursor:pointer;
+}
+
+/* Table Card */
+
+.tableCard{
+    background:white;
+    border-radius:12px;
+    padding:20px;
+    box-shadow:0 3px 12px rgba(0,0,0,.08);
+    margin-bottom:30px;
+}
+
+/* Table */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+thead{
+    background:#2e7d32;
+    color:white;
+}
+
+thead th{
+    padding:15px;
+    text-align:left;
+}
+
+tbody td{
+    padding:14px;
+    border-bottom:1px solid #e5e5e5;
+}
+
+tbody tr:hover{
+    background:#f9f9f9;
+}
+
+/* Status */
+
+.status{
+    padding:6px 15px;
+    border-radius:20px;
+    color:white;
+    font-size:14px;
+    font-weight:600;
+}
+
+.Pending{
+    background:#f39c12;
+}
+
+.Resolved{
+    background:#27ae60;
+}
+
+.Rejected{
+    background:#e74c3c;
+}
+
+/* Buttons */
+
+.viewBtn{
+    background:#0d6efd;
+    color:white;
+    border:none;
+    padding:8px 18px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.viewBtn:hover{
+    background:#0b5ed7;
+}
+
+/* Details Card */
+
+.detailsCard{
+    background:white;
+    border-radius:12px;
+    padding:25px;
+    box-shadow:0 3px 12px rgba(0,0,0,.08);
+}
+
+.detailsCard h3{
+    color:black;
+    margin-bottom:20px;
+}
+
+/* Grid */
+
+.detailsGrid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.detailsGrid div{
+    background:#f8f9fa;
+    padding:15px;
+    border-radius:10px;
+}
+
+.detailsGrid strong{
+    color:black;
+    font-weight:bold;
+}
+
+.detailsGrid p{
+    margin-top:8px;
+    text-align:center;
+    font-size:30px;
+    color:#2e7d32;
+}
+
+/* Description */
+
+.description{
+    margin-top:25px;
+    background:#f8f9fa;
+    padding:18px;
+    border-radius:10px;
+}
+
+
+.description strong{
+    color:black;
+}
+
+.description p{
+    margin-top:10px;
+    line-height:1.6;
+    color:#2e7d32;
+    font-size:30px;
+}
+
+/* Bottom Buttons */
+
+.buttonGroup{
+    display:flex;
+    justify-content:flex-end;
+    gap:15px;
+    margin-top:25px;
+}
+
+.resolveBtn,
+.rejectBtn,
+.deleteBtn{
+
+    border:none;
+    color:white;
+    padding:10px 25px;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:600;
+}
+
+.resolveBtn{
+    background:#198754;
+}
+
+.resolveBtn:hover{
+    background:#157347;
+}
+
+.rejectBtn{
+    background:#ffc107;
+    color:black;
+}
+
+.rejectBtn:hover{
+    background:#e0a800;
+}
+
+.deleteBtn{
+    background:#dc3545;
+}
+
+.deleteBtn:hover{
+    background:#bb2d3b;
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+    .topBar{
+        flex-direction:column;
+        align-items:stretch;
+    }
+
+    .topBar select{
+        width:100%;
+    }
+
+    .detailsGrid{
+        grid-template-columns:1fr;
+    }
+
+    .buttonGroup{
+        flex-direction:column;
+    }
+
+}
+
+@media(max-width:650px){
+
+    table{
+        display:block;
+        overflow-x:auto;
+        white-space:nowrap;
+    }
+
+}

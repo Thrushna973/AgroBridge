@@ -1,0 +1,141 @@
+.sidebar {
+  /* width: 350px;
+  min-height: 100vh;
+  background: #fff;
+  border-right: 1px solid #ececec;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 16px;
+  position: relative; */
+  padding:20px;
+  margin-top:80px;
+  width:30%;
+}
+/* Logo */
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.logo-icon {
+  height:40px;
+  width:40px;
+}
+
+.logo h2 {
+  color: #1f8f44;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* Menu */
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 16px;
+  background-color: #fff;
+  border:0px;
+  cursor: pointer;
+  transition: 0.3s;
+
+}
+
+.menu-item:hover {
+  background: #9bf59b;
+  border-radius:10px;
+}
+
+.menu-item.active {
+  background: #eef8f0;
+  border-left: 4px solid #1f8f44;
+}
+
+.menu-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: #666;
+}
+
+.menu-item.active .menu-left {
+  color: #1f8f44;
+  font-weight: 600;
+}
+
+/* Badge */
+
+.badge {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #1f8f44;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* Support Card */
+
+.support-card {
+  margin-top: auto;
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+  z-index: 2;
+}
+
+.support-card h4 {
+  margin-bottom: 8px;
+  font-size: 20px;
+}
+
+.support-card p {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.support-card button {
+  width: 100%;
+  border: none;
+  background: #1f8f44;
+  color: white;
+  padding: 12px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* Decorative Leaves */
+
+.leaf-bg {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  height: 220px;
+  opacity: 0.05;
+  background: url("https://www.svgrepo.com/show/530428/leaf.svg")
+    center/contain no-repeat;
+  pointer-events: none;
+}

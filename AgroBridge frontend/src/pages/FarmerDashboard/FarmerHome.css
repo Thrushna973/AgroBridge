@@ -1,0 +1,567 @@
+.FarmerHome{
+    background-color: #f5f5f5;
+}
+
+.Farmerheader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-family: sans-serif;
+    background-color:#0f8813;
+    color:#fff;
+    width:100%;
+}
+
+.farmerNotificationBtn{
+    background-color: #0f8813;
+    border:0px;
+    font-size: 35px;
+    margin-top:20px;
+    color:#fff;
+}
+.wheatIcon{
+    height: 45px;
+    width: 45px;
+}
+.Farmerheader h1{
+    font-weight:bold;
+    font-size: 24px;
+}
+.Farmerheader p{
+    font-size: 16px;
+    /* color: #666; */
+    font-weight: 500;
+}
+
+.FarmerheaderRight{
+    display: flex;
+    gap: 20px;
+}
+
+.Farmerprofile{
+    margin-top:35px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+    /* color: #333; */
+}
+
+.FarmerprofileName{
+    font-size: 18px;
+    font-weight:bold;
+    /* color:#333 */
+}
+
+.FarmerprofilePic{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.FarmerStats{
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Active Jobs Section */
+.ActiveJobs{
+    margin: 10px;
+    padding: 15px;
+    height: 140px;
+    width: 200px;
+    background-color: #e6f8e3;
+    border-radius: 8px;
+    border: 1px solid #c1e1c1;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    color: #0a3a0c;
+}
+
+.ActiveJobs h1{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.ActiveJobsLink{
+    text-decoration: none;
+    color: #0a3a0c;
+    font-weight: 500;
+    margin-top: 40px;
+}
+.arrowIcon{
+    height: 16px;
+    width: 16px;    
+}
+.number{
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+}
+
+.miniCard{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+/* Total Labourers Hired */
+.TotalLabourersHired{
+    margin: 10px;
+    padding: 15px;
+    height: 140px;
+    width: 200px;
+    background-color: #e6f8e3;
+    border-radius: 8px;
+    border: 1px solid #c1e1c1;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    color: #0a0a0a;
+}
+
+.TotalLabourersHired h1{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Pending Applications */
+.PendingApplications{
+    margin: 10px;
+    padding: 15px;
+    height: 140px;
+    width: 200px;
+    background-color: #fce6ca;
+    border-radius: 8px;
+    border: 1px solid #e1d3c1;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    color: #000000;
+}
+
+.PendingApplications h1{
+    font-size: 14px;
+    font-weight: bold;
+}
+.PendingApplicationsLink{
+    text-decoration: none;
+    color: #ca6405;
+    font-weight: 500;
+    margin-top: 40px;
+}
+.userscardIcon{
+    background-color: #f0d0b2;
+    border-radius: 50%;
+    padding: 5px;
+    height: 45px;
+    width: 45px;
+    color: #ca6405;
+}
+
+/* completed Jobs */
+.completedJobs{
+    margin: 10px;
+    padding: 15px;
+    height: 140px;
+    width: 200px;
+    background-color: #e3e5f8;
+    border-radius: 8px;
+    border: 1px solid #c1e1c1;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    color: #000000;
+    gap: 10px;
+}
+
+.completedJobs h1{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.circlecheckIcon{
+    background-color: #d0d0f0;
+    border-radius: 50%;
+    padding: 10px;
+    height: 45px;
+    width: 45px;
+    margin-top: 10px;
+    color:blue;
+}
+
+
+.completeJobsnumber{
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    margin-top: 10px;
+}
+
+
+/* Today's Workers */
+.todaysHead{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.todaysHead h1{
+    font-size:20px;
+    font-weight:bold;
+}
+.TodaysWorkers{
+    background-color:#fff;
+    border-radius:10px;
+    margin:20px;
+    padding:20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width:45%;
+}
+
+.workerProfileCard{
+    margin-top:20px;
+    /* justify-content:space-between; */
+}
+
+.viewAllLink{
+    font-size:13px;
+    color:#0c5a0f;
+    font-weight:bold;
+}
+
+.workerImg{
+    height:40px;
+    width:40px;
+    border-radius:50%;
+}
+.wrokername{
+    margin:10px;
+    margin-top:100px;
+    font-size:16px;
+    font-weight:bold;  
+}
+
+.workerPara{
+    margin-top:5px;
+    font-size:14px;
+    margin-left:10px;
+    color:#666;
+    font-weight:bold;
+}
+
+.workerTime{
+    color:#666;
+    margin-left:70px;
+    margin-top:23px;
+    font-weight:bold;
+    margin-right:100px;
+}
+
+.locationIcon{
+    height:17px;
+    width:20px;
+}
+
+.workerBtn{
+    background-color:#deece2;
+    border:0px;
+    margin-left:20px;
+    border-radius:10px;
+    width:100px;
+    height:43px;
+    color:#0e5e10;
+    font-size: 15px;
+    font-weight:bold;
+    margin-left:60px;
+}
+
+/* Pending Applications */
+.pendingApplications{
+    background-color:#fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius:5px;
+    margin:20px;
+    padding:20px;
+    width:50%;
+}
+.pendingApplicationsHeader{
+    display:flex;
+    justify-content:space-between;
+}
+
+.pendingApplicationsHeader h1{
+    font-size:20px;
+    font-weight:bold;
+}
+
+.pendingApplicationsHeader a{
+    font-size:13px;
+    color:#0a490c;
+    font-weight:bold;
+}
+
+.starIcon{
+    color:yellow;
+    font-size:16px;
+    margin:5px;
+}
+
+.workerViewBtn{
+    /* margin-left:100px; */
+    background-color:#ffffff;
+    border:1px solid #0a490c;
+    margin:10px;
+    height:40px;
+    width:100px;
+    border-radius:10px;
+    font-size:15px;
+    color:black;
+    font-weight:bold;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    
+}
+
+/* .workerAcceptBtn{
+    background: linear-gradient(150deg, #08702e, white);
+    border:1px solid #0a490c;
+    margin:10px;
+    height:40px;
+    width:100px;
+    border-radius:10px;
+    font-size:14px;
+    color:rgb(255, 255, 255);
+    font-weight:bold;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);    
+} */
+
+.shine-btn {
+  position: relative;
+  overflow: hidden;
+  background: #166534; /* dark green */
+  color: white;
+  height:40px;
+  width:100px;
+  font-size:16px;
+  text-align:center;
+  border: none;
+  font-weight:600px;
+  border-radius: 10px;
+  margin-top:10px;
+  cursor: pointer;
+  /* animation: shine 0.8s ease; */
+  /* animation:cubic-bezier(0.55, 0.055, 0.675, 0.19); */
+}
+
+.shine-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.6),
+    transparent
+  );
+  transform: skewX(-25deg);
+}
+
+.shine-btn:hover::before {
+  animation: shine 0.8s ease;
+}
+
+@keyframes shine {
+  100% {
+    left: 150%;
+  }
+}
+
+/* My Job Listings */
+.jobListingsCard{
+    background-color:#fff;
+    border-radius:10px;
+    margin:20px;
+    padding:20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width:50%;
+}
+
+.ListingsHead{
+        display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.ListingsHead h1{
+    font-size:20px;
+    font-weight:bold;
+}
+
+.Moneydiv{
+    margin-left:60px;
+}
+.wrokerMoney{
+    margin-top:25px;
+    font-weight:bold;
+}
+
+.AppliedBtn{
+    background-color:#deece2;
+    border:0px;
+    margin-left:20px;
+    border-radius:10px;
+    width:100px;
+    height:43px;
+    color:#0e5e10;
+    font-size: 15px;
+    font-weight:bold;
+    margin-left:180px;
+}
+
+.jobListingImg{
+    height:100px;
+    width:100px;
+    border-radius:10px;
+    margin:10px;
+}
+
+.jobListingProfileCard{
+    margin-top:20px;
+    padding:10px;
+    border:1px solid #e4dcdc;
+    border-radius:10px;
+    align-items:center;
+}
+
+/* Labourers Nearby */
+
+.labourersNearby{
+    background-color:#fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius:5px;
+    margin:20px;
+    padding:20px;
+    width:45%;
+}
+
+.nearbyMoney{
+    color:grey;
+
+}
+
+.spacing{
+    margin-left:180px;
+}
+
+.miniDiv{
+    margin-left:70px;
+    font-weight:bold;
+    font-size:14px;
+}
+
+/* Expenses Overview */
+
+.ExpensesOverview{
+    background-color:#fff;
+    margin:20px;
+    padding:20px;
+    border-radius:10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width:90%;
+}
+
+.graphImg1{
+    height:150px;
+    width:200px;
+}
+
+.expensedetails{
+    color:#666;
+}
+
+.stats{
+    color:#0e5e10;
+}
+
+.ExpensesOverview h1{
+    font-size:25px;
+    font-weight:bold;
+}
+
+.expenseMoney{
+    font-size:30px;
+    font-weight:bold;
+}
+
+
+/* Top Expenses */
+.topExpenses{
+    margin:20px;
+    padding:20px;
+    border-radius:10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.topExpenseDetails{
+    display:flex;
+    justify-content:space-between;
+    font: size 17px;
+}
+.topExpenseDetails:first-child{
+    margin-top:30px;
+}
+
+/* Hired Trend */
+
+.hiredTrend{
+    background-color:#fff;
+    margin:20px;
+    padding:20px;
+    border-radius:10px;
+    width:30%;
+}
+.hiredTrendHeader{
+    display:flex;
+    justify-content:space-between;
+}
+
+.graphYaxis p{
+    margin-bottom:30px;
+}
+.graphXaxis{
+    display:flex;
+    margin-left:10px;
+}
+.graphXaxis p{
+    margin-left:15px;
+}
+.graph_2{
+    height:290px;
+    width:350px;
+}
+
+/* Productivity Score */
+.productivityScore{
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius:10px;
+    margin:20px;
+    padding:20px;
+    text-align:center;
+    width:40%;
+}
+
+.productivityScore h1{
+    font-size:28px;
+    font-weight:bold;
+}
+.productivityScore p{
+    font-size:20px;
+    font-weight:600;
+}
+.piechart{
+    height:500px;
+    width:400px;
+
+}

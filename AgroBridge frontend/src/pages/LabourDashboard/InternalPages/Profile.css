@@ -1,0 +1,511 @@
+/* ==========================
+   Labour Profile Page
+========================== */
+
+.labourProfilePage{
+
+    padding:25px;
+
+    background:#f6f8f7;
+
+    min-height:100vh;
+    /* display:flex; */
+
+}
+
+/* ==========================
+   Loading
+========================== */
+
+.profileLoading{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    height:80vh;
+
+    font-size:22px;
+
+    font-weight:600;
+
+    color:#2E7D32;
+
+}
+
+/* ==========================
+   Header
+========================== */
+
+.profileHeader{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:25px;
+
+}
+
+.profileHeader h2{
+
+    font-size:30px;
+
+    color:#1d3b1d;
+
+    font-weight:700;
+
+}
+
+.editProfileBtn{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    background:#2E7D32;
+
+    color:white;
+
+    border:none;
+
+    border-radius:10px;
+
+    padding:10px 18px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    font-weight:600;
+
+}
+
+.editProfileBtn:hover{
+
+    background:#1B5E20;
+
+}
+
+/* ==========================
+   Top Card
+========================== */
+
+.profileTopCard{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:25px;
+
+    margin-bottom:25px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+.profileImage{
+
+    width:120px;
+
+    height:120px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:4px solid #2E7D32;
+
+}
+
+.profileTopCard h3{
+
+    margin-bottom:8px;
+
+    color:#1d3b1d;
+
+    font-size:28px;
+
+}
+
+.profileTopCard p{
+
+    color:#666;
+
+    font-size:16px;
+
+}
+
+/* ==========================
+   Cards
+========================== */
+.infoFullCard{
+    margin-top:40px;
+    width:90vw;
+    display:grid;
+    grid-template-columns: 2fr 2fr;
+    align-items:center;
+}
+.infoCard{
+
+    background:#f9faf9;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    margin-bottom:25px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+.infoCard h3{
+
+    margin-bottom:20px;
+
+    color:#1d3b1d;
+
+    font-size:24px;
+
+}
+
+/* ==========================
+   Grid
+========================== */
+
+.infoGrid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+
+}
+
+/* ==========================
+   Items
+========================== */
+
+.infoItem{
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+    padding:15px;
+    border-radius:12px;
+    background:#6dca71;
+    width:500px;
+    transition:.3s;
+
+}
+
+.infoItem:hover{
+
+    background:#edf7ed;
+
+}
+
+.infoItem svg{
+
+    color:#2E7D32;
+
+    width:22px;
+
+    height:22px;
+
+}
+
+.infoItem span{
+
+    display:block;
+
+    color:#777;
+
+    font-size:14px;
+
+    margin-bottom:4px;
+
+}
+
+.infoItem h5{
+
+    margin:0;
+
+    color:#222;
+
+    font-size:17px;
+
+    font-weight:600;
+
+}
+
+/* ==========================
+   About
+========================== */
+
+.aboutText{
+
+    line-height:1.8;
+
+    color:#555;
+
+    font-size:16px;
+
+}
+
+/* ==========================
+   Bottom Buttons
+========================== */
+
+/* .profileActions{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    gap:15px;
+
+    margin-top:30px;
+
+} */
+
+.cancelBtn{
+
+    padding:12px 25px;
+
+    border:none;
+    margin-top:40px;
+    border-radius:10px;
+
+    cursor:pointer;
+
+    background:#e0e0e0;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.cancelBtn:hover{
+
+    background:#cfcfcf;
+
+}
+
+.saveBtn{
+
+    padding:12px 25px;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    background:#2E7D32;
+
+    color:white;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.saveBtn:hover{
+
+    background:#1B5E20;
+
+}
+
+/* ==========================
+   Modal
+========================== */
+
+.editModal{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100%;
+
+    background:rgba(0,0,0,.35);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:999;
+
+}
+
+.editCard{
+
+    background:white;
+
+    width:420px;
+
+    max-width:90%;
+
+    border-radius:18px;
+
+    padding:30px;
+
+    text-align:center;
+
+}
+
+.editCard h3{
+
+    margin-bottom:15px;
+
+    color:#1d3b1d;
+
+}
+
+.editCard p{
+
+    color:#666;
+
+    line-height:1.7;
+
+    margin-bottom:25px;
+
+}
+
+.modalButtons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+}
+
+/* ==========================
+   Responsive
+========================== */
+/* 
+@media(max-width:992px){
+
+.infoGrid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.profileHeader{
+
+flex-direction:column;
+
+align-items:flex-start;
+
+gap:15px;
+
+}
+
+.profileTopCard{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+.profileActions{
+
+flex-direction:column;
+
+}
+
+.cancelBtn,
+
+.saveBtn{
+
+width:100%;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.labourProfilePage{
+
+padding:15px;
+
+}
+
+.profileImage{
+
+width:90px;
+
+height:90px;
+
+}
+
+.profileTopCard h3{
+
+font-size:22px;
+
+}
+
+.infoCard{
+
+padding:18px;
+
+}
+
+.infoCard h3{
+
+font-size:20px;
+
+}
+
+.infoItem{
+
+padding:12px;
+
+}
+
+.infoItem h5{
+
+font-size:15px;
+
+}
+
+.aboutText{
+
+font-size:15px;
+
+}
+
+} */

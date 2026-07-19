@@ -1,0 +1,86 @@
+.parent{
+    position: fixed;
+    inset: 0px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+.employerDetails{
+    color:rgb(46, 65, 46);
+    font-weight: bold;
+    border-radius:10px;
+    padding:20px;
+    /* position: fixed;
+    top:0;
+    left:0; */
+    font-size: 14px;;
+    width:60%;
+    height:80vh;
+    background-color:rgba(10, 224, 64, 0.6);
+
+    /* align-items:center;
+    z-index:1000;   */
+    margin:30px;
+}
+.formFields{
+    padding-top:20px;
+}
+.employerFormInput{
+    height:30px;
+    width:170px;
+    margin:10px;
+    border-radius:5px;
+    border-color:rgb(46, 65, 46);
+}
+.nameInput{
+    margin-left:75px;
+    
+}
+.farmTypeInput{
+    margin-left:46px;
+}
+.noofInput{
+    margin-left:16px;
+}  
+
+.villageInput{
+    margin-left:69px;
+}
+
+.farmSizeInput{
+    margin-left:54px;
+}
+
+.employerPhoto{
+    margin-left:26px;
+}
+.submitBtn{
+    height:40px;
+    width:120px;
+    border-color:rgb(46, 65, 46);
+    background-color: rgb(46, 65, 46);
+    border-radius:5px;
+    color:antiquewhite;
+    font-size:17px;
+    margin-top:30px;
+    margin-left:100px;
+}
+.employerPhoto::file-selector-button{
+    background-color:rgb(46, 65, 46);
+    color: white;
+    font-size:x-small;
+    border: none;
+    border-radius: 5px;
+
+    padding: 3px 10px;
+    margin-right: 10px;
+
+    cursor: pointer;
+}
+
+
+
