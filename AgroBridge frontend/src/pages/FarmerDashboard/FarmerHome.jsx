@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
-import paddy from '../../assets/paddy.png'
-import LabourProfile from '../../assets/LabourProfile.jpg'
+import paddy from '../../assets/Paddy.png';
+import LabourProfile from '../../assets/labourProfile.jpg'
 import Weeding from '../../assets/weeding.jpeg'
 import graph_1 from '../../assets/graph 1.png'
 import graph_2 from '../../assets/graph 2.png'

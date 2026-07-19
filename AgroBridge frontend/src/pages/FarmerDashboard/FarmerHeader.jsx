@@ -2,7 +2,7 @@ import React, {useContext} from 'react'
 import './FarmerHome.css'
 import { GiWheat } from "react-icons/gi";
 import { IoMdNotificationsOutline } from "react-icons/io"
-import LabourProfile from '../../assets/LabourProfile.jpg'
+import LabourProfile from '../../assets/labourProfile.jpg'
 import { AuthContext } from "../../context/AuthContext";
 export const FarmerHeader = () => {  
     // const userDetails = JSON.parse(localStorage.getItem("userDetails"));  

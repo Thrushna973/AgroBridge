@@ -1,5 +1,5 @@
 import { useAI } from "../../context/AIContext";
-import AIChatWindow from "./AIChatWindow";
+import AIChatWindow from "./AIChatwindow";
 import "./ai.css";
 
 export default function AIWidget() {
