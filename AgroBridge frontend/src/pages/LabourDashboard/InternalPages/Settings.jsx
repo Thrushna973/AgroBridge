@@ -78,7 +78,7 @@ const Settings = () => {
      const loadProfile = () => {
 
     fetch(
-        "http://localhost:5000/api/settings/labourProfile",
+        "import.meta.env.VITE_API_URL/settings/labourProfile",
         {
             headers:{
                 Authorization:`Bearer ${token}`
@@ -100,7 +100,7 @@ const Settings = () => {
 
         fetch(
 
-            "http://localhost:5000/api/settings/preferences",
+            "import.meta.env.VITE_API_URL/settings/preferences",
 
             {
 
@@ -130,7 +130,7 @@ const Settings = () => {
 
         fetch(
 
-            "http://localhost:5000/api/settings/notifications",
+            "import.meta.env.VITE_API_URL/settings/notifications",
 
             {
 
@@ -222,7 +222,7 @@ const saveProfile = async () => {
 
         const response = await fetch(
 
-            "http://localhost:5000/api/settings/profile",
+            "import.meta.env.VITE_API_URL/settings/profile",
 
             {
 
@@ -278,7 +278,7 @@ const saveProfile = async () => {
 
         fetch(
 
-            "http://localhost:5000/api/settings/password",
+            "import.meta.env.VITE_API_URL/settings/password",
 
             {
 
@@ -329,7 +329,7 @@ const saveProfile = async () => {
 
         fetch(
 
-            "http://localhost:5000/api/settings/preferences",
+            "import.meta.env.VITE_API_URL/settings/preferences",
 
             {
 
@@ -370,7 +370,7 @@ const saveProfile = async () => {
 
         fetch(
 
-            "http://localhost:5000/api/settings/notifications",
+            "import.meta.env.VITE_API_URL/settings/notifications",
 
             {
 

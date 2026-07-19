@@ -60,7 +60,7 @@ const Attendance = () => {
 
     useEffect(() => {
 
-        fetch(`http://localhost:5000/api/jobs/my`,
+        fetch(`import.meta.env.VITE_API_URL/jobs/my`,
             {
                 headers:{
                     Authorization:`Bearer ${token}`
@@ -92,7 +92,7 @@ const Attendance = () => {
 
     if (!selectedJob || !selectedDate || !token) return;
 
-    fetch(`http://localhost:5000/api/dashboard/${selectedJob}/${selectedDate}`,{
+    fetch(`import.meta.env.VITE_API_URL/dashboard/${selectedJob}/${selectedDate}`,{
         headers:{
             Authorization:`Bearer ${token}`
         }
@@ -129,7 +129,7 @@ console.log(selectedJob);
 console.log(selectedDate);
 
 // useEffect(() =>{
-//     fetch(`http://localhost:5000/api/attendance/job/${selectedJob}`)
+//     fetch(`import.meta.env.VITE_API_URL/attendance/job/${selectedJob}`)
 //     .then(res => res.json())
 //     .then(data => {
 //         setAttendance(data);
@@ -296,7 +296,7 @@ console.log(selectedDate);
     }));
     console.log(payload);
 
-    fetch("http://localhost:5000/api/attendance/bulk", {
+    fetch("import.meta.env.VITE_API_URL/attendance/bulk", {
 
         method: "POST",
 

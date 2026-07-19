@@ -19,7 +19,7 @@ const Profile = () => {
     const loadProfile = () => {
 
         fetch(
-            "http://localhost:5000/api/settings/labourProfile",
+            "import.meta.env.VITE_API_URL/settings/labourProfile",
             {
                 headers:{
                     Authorization:`Bearer ${token}`

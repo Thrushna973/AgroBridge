@@ -78,7 +78,7 @@ const Settings = () => {
 
     const getProfile = () => {
 
-    fetch(`http://localhost:5000/api/settings/profile/${user?.id}`,
+    fetch(`import.meta.env.VITE_API_URL/settings/profile/${user?.id}`,
         {
             headers: {
                 Authorization: `Bearer ${token}`
@@ -106,7 +106,7 @@ const Settings = () => {
 
 const getSettings = () => {
 
-    fetch("http://localhost:5000/api/settings", {
+    fetch("import.meta.env.VITE_API_URL/settings", {
         headers:{
             Authorization: `Bearer ${token}`
         }
@@ -155,7 +155,7 @@ const handleProfileSubmit = async () => {
 
     const response = await fetch(
 
-        `http://localhost:5000/api/settings/profile/${user?.id}`,
+        `import.meta.env.VITE_API_URL/settings/profile/${user?.id}`,
 
         {
 
@@ -186,7 +186,7 @@ const handlePasswordSubmit = async () => {
 
     const response = await fetch(
 
-        `http://localhost:5000/api/settings/password/${user?.id}`,
+        `import.meta.env.VITE_API_URL/settings/password/${user?.id}`,
 
         {
 
@@ -239,7 +239,7 @@ const handleSettingsSubmit = async () => {
 
     const response = await fetch(
 
-        "http://localhost:5000/api/settings",
+        "import.meta.env.VITE_API_URL/settings",
 
         {
 

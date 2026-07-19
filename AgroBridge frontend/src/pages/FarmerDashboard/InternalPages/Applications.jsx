@@ -12,7 +12,7 @@ const Applications = () => {
 
     const getApplications = () => {
 
-    fetch(`http://localhost:5000/api/applications/farmer`,
+    fetch(`import.meta.env.VITE_API_URL/applications/farmer`,
         {
             headers:{
                 Authorization:`Bearer ${token}`
@@ -40,7 +40,7 @@ const [selectedLabour, setSelectedLabour] = useState(null);
     const handleHire = async () => {
 
     await fetch(
-        `http://localhost:5000/api/applications/${selectedApplication.id}/status`,
+        `import.meta.env.VITE_API_URL/applications/${selectedApplication.id}/status`,
         {
 
             method: "PUT",
@@ -62,7 +62,7 @@ const [selectedLabour, setSelectedLabour] = useState(null);
 
     const handleReject = async () => {
     await fetch(
-        `http://localhost:5000/api/applications/${selectedApplication.id}/status`,
+        `import.meta.env.VITE_API_URL/applications/${selectedApplication.id}/status`,
         {
 
             method:"PUT",
@@ -88,7 +88,7 @@ const handleReport = async () => {
 
     await fetch(
 
-        `http://localhost:5000/api/applications/${selectedApplication.id}/status`,
+        `import.meta.env.VITE_API_URL/applications/${selectedApplication.id}/status`,
 
         {
 
@@ -116,7 +116,7 @@ const getLabour = async (id) => {
     try{
 
         const response = await fetch(
-            `http://localhost:5000/api/auth/users/${id}`,{
+            `import.meta.env.VITE_API_URL/auth/users/${id}`,{
                 headers:{
                     Authorization:`Bearer ${token}`
                 }

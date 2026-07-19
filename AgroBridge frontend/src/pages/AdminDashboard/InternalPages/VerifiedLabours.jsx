@@ -8,7 +8,7 @@ const VerifiedLabours = () => {
   const [selectedUsers, setSelectedUsers] = useState([]);
   const token = localStorage.getItem("token");
   function GetData() {
-   fetch("http://localhost:5000/api/auth/users",
+   fetch("import.meta.env.VITE_API_URL/auth/users",
     {
       headers: {
         Authorization: `Bearer ${token}`

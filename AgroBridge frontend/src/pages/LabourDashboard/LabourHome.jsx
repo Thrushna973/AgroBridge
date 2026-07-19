@@ -31,7 +31,7 @@ const LabourHome = () => {
     console.log(user?.id);
 
     // function GetData() {
-    //     fetch("http://localhost:5000/api/jobs", {
+    //     fetch("import.meta.env.VITE_API_URL/jobs", {
     //         headers:{
     //             Authorization:`Bearer ${token}`
     //         }
@@ -50,7 +50,7 @@ const LabourHome = () => {
 
 //     const response = await fetch(
 
-// "http://localhost:5000/api/jobs/labour",
+// "import.meta.env.VITE_API_URL/jobs/labour",
 
 // {
 
@@ -75,7 +75,7 @@ const LabourHome = () => {
     const fetchJobs = async () => {
 
         const response = await fetch(
-            "http://localhost:5000/api/jobs/labour",
+            "import.meta.env.VITE_API_URL/jobs/labour",
             {
                 headers: {
                     Authorization: `Bearer ${token}`
@@ -179,7 +179,7 @@ useEffect(() => {
 
             const response = await fetch(
 
-                `http://localhost:5000/api/reports/job/${selectedJob?.id}/status`,
+                `import.meta.env.VITE_API_URL/reports/job/${selectedJob?.id}/status`,
 
                 {
 
@@ -214,7 +214,7 @@ useEffect(() => {
 const handleApply = async () => {
 
     const response = await fetch(
-        "http://localhost:5000/api/applications",
+        "import.meta.env.VITE_API_URL/applications",
         {
             method:"POST",
 
@@ -251,7 +251,7 @@ const loadTodayJobs=()=>{
 
     fetch(
 
-        "http://localhost:5000/api/jobs/today",
+        "import.meta.env.VITE_API_URL/jobs/today",
 
         {
 

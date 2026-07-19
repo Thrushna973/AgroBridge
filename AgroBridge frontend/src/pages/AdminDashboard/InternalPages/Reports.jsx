@@ -6,7 +6,7 @@ const Reports = () => {
     const [reportsData, setReportsData] = useState([]);
     const token = localStorage.getItem("token");
     function GetData() {
-        fetch("http://localhost:5000/api/reports",
+        fetch("import.meta.env.VITE_API_URL/reports",
             {
                 headers:{
                     Authorization: `Bearer ${token}`
@@ -34,7 +34,7 @@ const Reports = () => {
     }, []);
     const handleResolve = async () => {
     await fetch(
-        `http://localhost:5000/api/reports/${selectedReport?.id}/status`,
+        `import.meta.env.VITE_API_URL/reports/${selectedReport?.id}/status`,
         {
 
             method:"PUT",
@@ -55,7 +55,7 @@ const Reports = () => {
 }
     const handleReject = async () => {
     await fetch(
-        `http://localhost:5000/api/reports/${selectedReport?.id}/status`,
+        `import.meta.env.VITE_API_URL/reports/${selectedReport?.id}/status`,
         {
 
             method:"PUT",

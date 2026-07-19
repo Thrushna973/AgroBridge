@@ -42,7 +42,7 @@ function AdminHome() {
     const [recentJobs, setRecentJobs] = useState([]);
 
     useEffect(() =>{
-        fetch("http://localhost:5000/api/dashboard/recent-activity",
+        fetch("import.meta.env.VITE_API_URL/dashboard/recent-activity",
             {
                 headers:{
                     Authorization:`Bearer ${token}`
@@ -62,7 +62,7 @@ function AdminHome() {
         }, []);
 
     useEffect(() => {
-        fetch("http://localhost:5000/api/admin/dashboard",
+        fetch("import.meta.env.VITE_API_URL/admin/dashboard",
             {
                 headers:{
                     Authorization: `Bearer ${token}`
@@ -80,7 +80,7 @@ function AdminHome() {
     }, []);
 
     useEffect(() => {
-        fetch("http://localhost:5000/api/reports",
+        fetch("import.meta.env.VITE_API_URL/reports",
             {
                 headers:{
                     Authorization: `Bearer ${token}`
@@ -106,7 +106,7 @@ function AdminHome() {
     }, []);
 
     useEffect(() => {          
-        fetch("http://localhost:5000/api/jobs",
+        fetch("import.meta.env.VITE_API_URL/jobs",
             {
                 headers: {
                     Authorization: `Bearer ${token}`

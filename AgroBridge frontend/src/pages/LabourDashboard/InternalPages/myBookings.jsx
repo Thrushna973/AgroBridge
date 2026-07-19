@@ -10,7 +10,7 @@ const MyBookings = () => {
     function GetData() {
         const token = localStorage.getItem("token");
 
-        fetch(`http://localhost:5000/api/applications/my`, {
+        fetch(`import.meta.env.VITE_API_URL/applications/my`, {
             headers:{
                 Authorization: `Bearer ${token}`
             }

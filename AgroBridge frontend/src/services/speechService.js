@@ -14,7 +14,7 @@ export const uploadAudio = async (audioBlob) => {
 
     const response = await fetch(
 
-        "http://localhost:5000/api/ai/speech-to-text",
+        "import.meta.env.VITE_API_URL/ai/speech-to-text",
 
         {
 

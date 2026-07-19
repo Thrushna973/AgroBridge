@@ -32,7 +32,7 @@ export default function FarmProfile() {
 
   useEffect(() => {
     if (!token) return;
-    fetch("http://localhost:5000/api/farm-profile", {
+    fetch("import.meta.env.VITE_API_URL/farm-profile", {
       headers: { Authorization: `Bearer ${token}` }
     })
       .then(async r => {
@@ -76,7 +76,7 @@ export default function FarmProfile() {
   const handleSave = async () => {
     try {
       const method = profile.id ? "PUT" : "POST";
-      const res = await fetch("http://localhost:5000/api/farm-profile", {
+      const res = await fetch("import.meta.env.VITE_API_URL/farm-profile", {
         method,
         headers: {
           "Content-Type": "application/json",
@@ -92,7 +92,7 @@ export default function FarmProfile() {
       if (photo) {
         const fd = new FormData();
         fd.append("photo", photo);
-        await fetch("http://localhost:5000/api/farm-profile/photo", {
+        await fetch("import.meta.env.VITE_API_URL/farm-profile/photo", {
           method: "PUT",
           headers: { Authorization: `Bearer ${token}` },
           body: fd

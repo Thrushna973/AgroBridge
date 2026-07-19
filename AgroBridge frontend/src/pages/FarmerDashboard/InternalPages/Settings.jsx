@@ -65,7 +65,7 @@ const Settings = () => {
 
         fetch(
 
-            "http://localhost:5000/api/settings/profile",
+            "import.meta.env.VITE_API_URL/settings/profile",
 
             {
 
@@ -106,7 +106,7 @@ const Settings = () => {
 
         fetch(
 
-            "http://localhost:5000/api/settings/preferences",
+            "import.meta.env.VITE_API_URL/settings/preferences",
 
             {
 
@@ -136,7 +136,7 @@ const Settings = () => {
 
         fetch(
 
-            "http://localhost:5000/api/settings/notifications",
+            "import.meta.env.VITE_API_URL/settings/notifications",
 
             {
 
@@ -218,7 +218,7 @@ const Settings = () => {
 
         fetch(
 
-            "http://localhost:5000/api/settings/profile",
+            "import.meta.env.VITE_API_URL/settings/profile",
 
             {
 
@@ -270,7 +270,7 @@ const Settings = () => {
 
         fetch(
 
-            "http://localhost:5000/api/settings/password",
+            "import.meta.env.VITE_API_URL/settings/password",
 
             {
 
@@ -321,7 +321,7 @@ const Settings = () => {
 
         fetch(
 
-            "http://localhost:5000/api/settings/preferences",
+            "import.meta.env.VITE_API_URL/settings/preferences",
 
             {
 
@@ -362,7 +362,7 @@ const Settings = () => {
 
         fetch(
 
-            "http://localhost:5000/api/settings/notifications",
+            "import.meta.env.VITE_API_URL/settings/notifications",
 
             {
 
@@ -402,7 +402,7 @@ const Settings = () => {
 
         const response = await fetch(
 
-            "http://localhost:5000/api/auth/logout",
+            "import.meta.env.VITE_API_URL/auth/logout",
 
             {
 

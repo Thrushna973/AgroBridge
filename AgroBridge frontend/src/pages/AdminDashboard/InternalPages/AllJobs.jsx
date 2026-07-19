@@ -7,7 +7,7 @@ const AllJobs = () => {
     const [UsersData, setUsersData] = useState([]);
     const token = localStorage.getItem("token");
     function GetData() {
-        fetch(`http://localhost:5000/api/jobs`,
+        fetch(`import.meta.env.VITE_API_URL/jobs`,
             {
                 headers:{
                     Authorization: `Bearer ${token}`
@@ -51,7 +51,7 @@ const AllJobs = () => {
 //         for (const id of selectedUsers) {
 
 //             await fetch(
-//                 `http://localhost:5000/api/auth/users/${id}/status`,
+//                 `import.meta.env.VITE_API_URL/auth/users/${id}/status`,
 //                 {
 //                     method: "PUT",
 //                     headers: {
@@ -81,7 +81,7 @@ const AllJobs = () => {
 //     try {
 //       for (const id of selectedUsers) {
 //         await fetch(
-//           `http://localhost:5000/api/auth/users/${id}/status`,
+//           `import.meta.env.VITE_API_URL/auth/users/${id}/status`,
 //           {
 //             method: "PUT",
 //             headers: {
@@ -108,7 +108,7 @@ const AllJobs = () => {
 //     }
 //       for (const id of selectedUsers) {
 //         await fetch(
-//           `http://localhost:5000/api/auth/users/${id}`,
+//           `import.meta.env.VITE_API_URL/auth/users/${id}`,
 //           {
 //             method: "DELETE"
 //           }

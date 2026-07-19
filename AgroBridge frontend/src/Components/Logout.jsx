@@ -20,7 +20,7 @@ const Logout = () => {
 
         const response = await fetch(
 
-            "http://localhost:5000/api/auth/logout",
+            "import.meta.env.VITE_API_URL/auth/logout",
 
             {
 

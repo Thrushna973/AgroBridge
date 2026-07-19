@@ -11,7 +11,7 @@ const FarmerDetails = () => {
 
     useEffect(() => {
 
-        fetch(`http://localhost:5000/api/auth/users/${id}`)
+        fetch(`import.meta.env.VITE_API_URL/auth/users/${id}`)
         .then(res => res.json())
         .then(data => {  
             console.log(data);

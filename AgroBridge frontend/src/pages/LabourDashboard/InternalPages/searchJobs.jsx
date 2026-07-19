@@ -60,7 +60,7 @@ const searchJobs = () => {
 
     fetch(
 
-      "http://localhost:5000/api/jobs/labour",
+      "import.meta.env.VITE_API_URL/jobs/labour",
 
       {
 

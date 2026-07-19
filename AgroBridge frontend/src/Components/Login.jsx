@@ -32,7 +32,7 @@ const LabourLogin = ({ closeModal }) => {
         try {
 
             const response = await fetch(
-                "http://localhost:5000/api/auth/login",
+                "import.meta.env.VITE_API_URL/auth/login",
                 {
                     method: "POST",
                     headers: {
@@ -63,7 +63,7 @@ const LabourLogin = ({ closeModal }) => {
 
             // // Fetch complete user details
             // const detailsResponse = await fetch(
-            //     `http://localhost:5000/api/auth/users/${data.user.id}`
+            //     `import.meta.env.VITE_API_URL/auth/users/${data.user.id}`
             // );
 
             // const userDetails = await detailsResponse.json();
@@ -75,7 +75,7 @@ const LabourLogin = ({ closeModal }) => {
 
         
             const detailsResponse = await fetch(
-                "http://localhost:5000/api/auth/me",
+                "import.meta.env.VITE_API_URL/auth/me",
                 {
                     headers: {
                         Authorization: `Bearer ${data.token}`

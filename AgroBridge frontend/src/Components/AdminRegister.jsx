@@ -25,7 +25,7 @@ const AdminRegister = ({closePopUp}) => {
             formData.append("role", adminData.role);
 
             const response = await fetch(
-                "http://localhost:5000/api/auth/register",
+                "import.meta.env.VITE_API_URL/auth/register",
             {
                 method: "POST",
                 body: formData,

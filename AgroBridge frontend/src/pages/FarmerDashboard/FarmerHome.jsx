@@ -62,7 +62,7 @@ const FarmerHome = () => {
 
 //     fetch(
 
-//         "http://localhost:5000/api/dashboard/stats",
+//         "import.meta.env.VITE_API_URL/dashboard/stats",
 
 //         {
 
@@ -109,7 +109,7 @@ const fetchDashboard = async () => {
 
         const response = await fetch(
 
-            "http://localhost:5000/api/dashboard/farmer",
+            "import.meta.env.VITE_API_URL/dashboard/farmer",
 
             {
 
@@ -161,7 +161,7 @@ console.log(dashboard);
 const handleHire = async () => {
 
     await fetch(
-        `http://localhost:5000/api/applications/${selectedApplication.id}/status`,
+        `import.meta.env.VITE_API_URL/applications/${selectedApplication.id}/status`,
         {
 
             method: "PUT",

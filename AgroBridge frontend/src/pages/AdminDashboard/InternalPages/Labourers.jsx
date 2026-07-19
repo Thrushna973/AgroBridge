@@ -9,7 +9,7 @@ const Labourers = () => {
   const token = localStorage.getItem("token");
 
   function GetData() {
-   fetch("http://localhost:5000/api/auth/users", {
+   fetch("import.meta.env.VITE_API_URL/auth/users", {
     headers:{
       Authorization:`Bearer ${token}`
     }
@@ -48,7 +48,7 @@ const Labourers = () => {
         for (const id of selectedUsers) {
 
             await fetch(
-                `http://localhost:5000/api/auth/users/${id}/status`,
+                `import.meta.env.VITE_API_URL/auth/users/${id}/status`,
                 {
                     method: "PUT",
                     headers: {
@@ -79,7 +79,7 @@ const Labourers = () => {
     try {
       for (const id of selectedUsers) {
         await fetch(
-          `http://localhost:5000/api/auth/users/${id}/status`,
+          `import.meta.env.VITE_API_URL/auth/users/${id}/status`,
           {
             method: "PUT",
             headers: {
@@ -103,7 +103,7 @@ const Labourers = () => {
     try{
       for (const id of selectedUsers) {
         await fetch(
-          `http://localhost:5000/api/auth/users/${id}`,
+          `import.meta.env.VITE_API_URL/auth/users/${id}`,
           {
             method: "DELETE",
             headers:{

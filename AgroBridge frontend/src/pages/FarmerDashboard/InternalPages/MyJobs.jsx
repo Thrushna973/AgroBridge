@@ -10,7 +10,7 @@ const MyJobs = () => {
     function GetData() {
         const token = localStorage.getItem("token");
 
-        fetch(`http://localhost:5000/api/jobs/my`, {
+        fetch(`import.meta.env.VITE_API_URL/jobs/my`, {
             headers:{
                 Authorization: `Bearer ${token}`
             }
